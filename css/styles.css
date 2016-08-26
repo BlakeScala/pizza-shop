@@ -1,0 +1,30 @@
+body{
+  background-color: bisque;
+  font-size: 20px;
+}
+.jumbotron{
+  text-align: center;
+  color: white;
+  background-color: red;
+  text-shadow: 0 0 20px darkred;
+  border-bottom: 20px solid darkred;
+}
+.jumbotron h1 {
+  font-size: 84px;
+  font-family: cursive;
+}
+h3 {
+  font-size: 34px;
+}
+button {
+  margin-top: 20px;
+}
+img {
+  width:200px;
+}
+#yourorder, #address, #thanks {
+  display: none;
+}
+#ordername {
+  margin-top: 20px;
+}

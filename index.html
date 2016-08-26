@@ -9,53 +9,87 @@
   </head>
   <body>
     <div class="jumbotron">
-      <h1>Pizza</h1>
+      <h1><img src="img/pizza.png" alt="logo">Vegan Pizzeria<img src="img/pizza.png" alt="logo"></h1>
     </div>
     <div class="container">
-      <form>
-        <div class="pizzabuilder">
-          <div class="toppings">
-            <h3>Toppings</h3>
-            <label class="checkbox-inline">
-              <input type="checkbox" name=topping-check value="Vegan Cheese">Vegan Cheese
-            </label>
-            <label class="checkbox-inline">
-              <input type="checkbox" name=topping-check value="Onions">Onions
-            </label>
-            <label class="checkbox-inline">
-              <input type="checkbox" name=topping-check value="Peppers">Peppers
-            </label>
-            <label class="checkbox-inline">
-              <input type="checkbox" name=topping-check value="Mushrooms">Mushrooms
-            </label>
-            <label class="checkbox-inline">
-              <input type="checkbox" name=topping-check value="Olives">Olives
-            </label>
-            <label class="checkbox-inline">
-              <input type="checkbox" name=topping-check value="Vegan Pepperoni">Vegan Pepperoni
-            </label>
+      <div class="col-md-8">
+        <form>
+          <div class="pizzabuilder">
+            <div class="toppings">
+              <h3>Toppings</h3>
+              <label class="checkbox-inline">
+                <input type="checkbox" name=topping-check value="vegan cheese">Vegan Cheese
+              </label>
+              <label class="checkbox-inline">
+                <input type="checkbox" name=topping-check value="onions">Onions
+              </label>
+              <label class="checkbox-inline">
+                <input type="checkbox" name=topping-check value="peppers">Peppers
+              </label>
+              <label class="checkbox-inline">
+                <input type="checkbox" name=topping-check value="mushrooms">Mushrooms
+              </label>
+              <label class="checkbox-inline">
+                <input type="checkbox" name=topping-check value="olives">Olives
+              </label>
+              <label class="checkbox-inline">
+                <input type="checkbox" name=topping-check value="vegan pepperoni">Vegan Pepperoni
+              </label>
+            </div>
+            <div class="size">
+              <h3>Size</h3>
+              <label class="checkbox-inline">
+                <input type="radio" name=size-check value="small" required> Small
+              </label>
+              <label class="checkbox-inline">
+                <input type="radio" name=size-check value="medium"> Medium
+              </label>
+              <label class="checkbox-inline">
+                <input type="radio" name=size-check value="large"> Large
+              </label>
+              <label class="checkbox-inline">
+                <input type="radio" name=size-check value="extra large"> Extra Large
+              </label><br>
+            </div>
+            <div class="delivery">
+              <h3>Delivery or Pick-up?</h3>
+              <label class="checkbox-inline">
+                <input type="radio" name=delivery-check value="delivery" required> Delivery
+              </label>
+              <label class="checkbox-inline">
+                <input type="radio" name=delivery-check value="pickup"> Pickup
+              </label>
+            </div>
           </div>
-          <div class="size">
-            <h3>Size</h3>
-            <label class="checkbox-inline">
-              <input type="radio" name=size-check value="Small" required> Small
-            </label>
-            <label class="checkbox-inline">
-              <input type="radio" name=size-check value="Medium"> Medium
-            </label>
-            <label class="checkbox-inline">
-              <input type="radio" name=size-check value="Large"> Large
-            </label>
-            <label class="checkbox-inline">
-              <input type="radio" name=size-check value="Extra Large"> Extra Large
-            </label><br>
-            <button type="submit" name="button">Order!</button>
-            <button id=addpizza class="reset" type="button" name="button">Add another Pizza!</button>
+          <div class="form-group">
+            <h3>Order Name</h3>
+            <input id="inputname" type="text" name="name" value="Pizza Lover">
           </div>
-        </div>
-      </form>
-      <div id="output">
+          <button type="submit" name="button">Add Pizza!</button>
+          <button id="reset" class="reset" type="button" name="button">Reset Order</button>
+        </form>
+      </div>
 
+      <div id= "yourorder" class="col-md-4">
+        <h3>Your Order</h3>
+        <div id="output">
+        </div>
+        <div id="pickup">
+          <button id= "pickupconfirm" type="button" name="button">Confirm Order</button>
+        </div>
+        <div id="address">
+          <h3>Please enter your address below:</h3>
+          <form id="addressconfirm">
+            <div class="form-group">
+              <label for=""></label>
+              <input type="text" name="name" value="" required>
+            </div>
+            <button id = "addressconfirm" type="submit" name="button">Confirm Order</button>
+          </form>
+        </div>
+        <p id="thanks">
+          Thank you for your order! We'll see you shortly!
+        </p>
       </div>
     </div>
   </body>
