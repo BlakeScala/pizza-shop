@@ -67,6 +67,9 @@ img {
   background-color: white;
   border: 2px solid black;
   padding: 25px;
-  margin-top: 15px;
-  height: 480px;
+  margin-top: 25px;
+  height: 500px;
+}
+#delorpick{
+  margin-top: 0;
 }

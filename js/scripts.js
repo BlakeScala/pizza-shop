@@ -63,6 +63,7 @@ $(document).ready(function() {
     });
     $("#yourorder").hide();
     $("#address").hide();
+    $("#thanks").hide();
   });
 
   $("#addressconfirm").submit(function(){
