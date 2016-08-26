@@ -38,7 +38,7 @@
           <div class="size">
             <h3>Size</h3>
             <label class="checkbox-inline">
-              <input type="radio" name=size-check value="Small"> Small
+              <input type="radio" name=size-check value="Small" required> Small
             </label>
             <label class="checkbox-inline">
               <input type="radio" name=size-check value="Medium"> Medium
@@ -50,9 +50,13 @@
               <input type="radio" name=size-check value="Extra Large"> Extra Large
             </label><br>
             <button type="submit" name="button">Order!</button>
+            <button id=addpizza class="reset" type="button" name="button">Add another Pizza!</button>
           </div>
         </div>
       </form>
+      <div id="output">
+
+      </div>
     </div>
   </body>
 </html>
