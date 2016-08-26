@@ -12,45 +12,47 @@
       <h1>Pizza</h1>
     </div>
     <div class="container">
-      <div class="pizzabuilder">
-        <div class="toppings">
-          <h3>Toppings</h3>
-          <label class="checkbox-inline">
-            <input type="checkbox" id="inlineCheckbox1" value="option1">Vegan Cheese
-          </label>
-          <label class="checkbox-inline">
-            <input type="checkbox" id="inlineCheckbox2" value="option2">Onions
-          </label>
-          <label class="checkbox-inline">
-            <input type="checkbox" id="inlineCheckbox3" value="option3">Peppers
-          </label>
-          <label class="checkbox-inline">
-            <input type="checkbox" id="inlineCheckbox3" value="option3">Mushrooms
-          </label>
-          <label class="checkbox-inline">
-            <input type="checkbox" id="inlineCheckbox3" value="option3">Olives
-          </label>
-          <label class="checkbox-inline">
-            <input type="checkbox" id="inlineCheckbox3" value="option3">Vegan Pepperoni
-          </label>
+      <form>
+        <div class="pizzabuilder">
+          <div class="toppings">
+            <h3>Toppings</h3>
+            <label class="checkbox-inline">
+              <input type="checkbox" name=topping-check value="Vegan Cheese">Vegan Cheese
+            </label>
+            <label class="checkbox-inline">
+              <input type="checkbox" name=topping-check value="Onions">Onions
+            </label>
+            <label class="checkbox-inline">
+              <input type="checkbox" name=topping-check value="Peppers">Peppers
+            </label>
+            <label class="checkbox-inline">
+              <input type="checkbox" name=topping-check value="Mushrooms">Mushrooms
+            </label>
+            <label class="checkbox-inline">
+              <input type="checkbox" name=topping-check value="Olives">Olives
+            </label>
+            <label class="checkbox-inline">
+              <input type="checkbox" name=topping-check value="Vegan Pepperoni">Vegan Pepperoni
+            </label>
+          </div>
+          <div class="size">
+            <h3>Size</h3>
+            <label class="checkbox-inline">
+              <input type="radio" name=size-check value="Small"> Small
+            </label>
+            <label class="checkbox-inline">
+              <input type="radio" name=size-check value="Medium"> Medium
+            </label>
+            <label class="checkbox-inline">
+              <input type="radio" name=size-check value="Large"> Large
+            </label>
+            <label class="checkbox-inline">
+              <input type="radio" name=size-check value="Extra Large"> Extra Large
+            </label><br>
+            <button type="submit" name="button">Order!</button>
+          </div>
         </div>
-        <div class="size">
-          <h3>Size</h3>
-          <label class="checkbox-inline">
-            <input type="checkbox" id="inlineCheckbox1" value="option1"> Small
-          </label>
-          <label class="checkbox-inline">
-            <input type="checkbox" id="inlineCheckbox1" value="option1"> Medium
-          </label>
-          <label class="checkbox-inline">
-            <input type="checkbox" id="inlineCheckbox1" value="option1"> Large
-          </label>
-          <label class="checkbox-inline">
-            <input type="checkbox" id="inlineCheckbox1" value="option1"> Extra Large
-          </label><br>
-          <button type="submit" name="button">Order!</button>
-        </div>
-      </div>
+      </form>
     </div>
   </body>
 </html>
