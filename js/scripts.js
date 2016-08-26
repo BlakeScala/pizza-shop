@@ -48,6 +48,9 @@ $(document).ready(function() {
     if (deliveryInput === "delivery"){
       $("#address").show();
       $("#pickup").hide();
+    } else if (deliveryInput === "pickup"){
+      $("#address").hide();
+      $("#pickup").show();
     }
   });
 

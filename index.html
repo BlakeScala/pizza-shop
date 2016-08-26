@@ -12,42 +12,45 @@
       <h1><img src="img/pizza.png" alt="logo">Vegan Pizzeria<img src="img/pizza.png" alt="logo"></h1>
     </div>
     <div class="container">
-      <div class="col-md-8">
+      <p id="disclaimer">
+        We can only accept single pizza orders until further notice! Sorry for the inconvenience!
+      </p>
+      <div id="pizzacol" class="col-md-8">
         <form>
           <div class="pizzabuilder">
             <div class="toppings">
               <h3>Toppings</h3>
-              <label class="checkbox-inline">
+              <label class="checkbox">
                 <input type="checkbox" name=topping-check value="vegan cheese">Vegan Cheese
               </label>
-              <label class="checkbox-inline">
+              <label class="checkbox">
                 <input type="checkbox" name=topping-check value="onions">Onions
               </label>
-              <label class="checkbox-inline">
+              <label class="checkbox">
                 <input type="checkbox" name=topping-check value="peppers">Peppers
               </label>
-              <label class="checkbox-inline">
+              <label class="checkbox">
                 <input type="checkbox" name=topping-check value="mushrooms">Mushrooms
               </label>
-              <label class="checkbox-inline">
+              <label class="checkbox">
                 <input type="checkbox" name=topping-check value="olives">Olives
               </label>
-              <label class="checkbox-inline">
+              <label class="checkbox">
                 <input type="checkbox" name=topping-check value="vegan pepperoni">Vegan Pepperoni
               </label>
             </div>
             <div class="size">
               <h3>Size</h3>
-              <label class="checkbox-inline">
+              <label class="checkbox">
                 <input type="radio" name=size-check value="small" required> Small
               </label>
-              <label class="checkbox-inline">
+              <label class="checkbox">
                 <input type="radio" name=size-check value="medium"> Medium
               </label>
-              <label class="checkbox-inline">
+              <label class="checkbox">
                 <input type="radio" name=size-check value="large"> Large
               </label>
-              <label class="checkbox-inline">
+              <label class="checkbox">
                 <input type="radio" name=size-check value="extra large"> Extra Large
               </label><br>
             </div>
@@ -63,7 +66,7 @@
           </div>
           <div class="form-group">
             <h3>Order Name</h3>
-            <input id="inputname" type="text" name="name" value="Pizza Lover">
+            <input id="inputname" type="text" name="name" required>
           </div>
           <button type="submit" name="button">Add Pizza!</button>
           <button id="reset" class="reset" type="button" name="button">Reset Order</button>
@@ -84,7 +87,7 @@
               <label for=""></label>
               <input type="text" name="name" value="" required>
             </div>
-            <button id = "addressconfirm" type="submit" name="button">Confirm Order</button>
+            <button id = "confirmaddress" type="submit" name="button">Confirm Order</button>
           </form>
         </div>
         <p id="thanks">
